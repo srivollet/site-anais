@@ -1,0 +1,428 @@
+/* Variables pour les couleurs */
+:root {
+    --main-bg-color: #f8f8f5;
+    --text-color: #4b4b4b;
+    --header-footer-bg: #e6e6e2;
+    --accent-color: #8a9c79;
+    --accent-hover: #6a7c59;
+    --active-link-color: #d18f97;
+
+    /* Nouvelles variables pour le bouton */
+    --btn-bg-color: #f7f4ed;
+    --btn-text-color: #4b4a45;
+    --btn-border-color: #d4d1cb;
+}
+
+/* Styles de base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+.section-container,
+.header-container,
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* --- En-tête (Header) --- */
+.site-header {
+    background-color: var(--header-footer-bg);
+    padding: 1em 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Styles du menu et du bouton de prise de RDV sur PC */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-nav .hamburger {
+    display: none;
+}
+
+.main-nav .nav-links {
+    display: flex;
+}
+
+.main-nav .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav a,
+.legal-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Style du bouton "Prendre RDV" sur PC */
+.btn-rdv {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid var(--btn-border-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-nav .active-link {
+    color: var(--active-link-color);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* --- Sections (déjà en place) --- */
+.hero-section {
+    background-image: url('https://via.placeholder.com/1920x800?text=Image+de+fond');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 10em 2em;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+.psychotherapy-section {
+    padding: 5em 0;
+}
+
+.psychotherapy-section .section-container {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+.psychotherapy-section .text-content {
+    flex: 1;
+}
+
+.psychotherapy-section .image-content {
+    flex: 1;
+}
+
+.psychotherapy-section .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.icon-text i {
+    font-size: 2em;
+    color: var(--accent-color);
+}
+
+.about-section {
+    padding: 5em 0;
+}
+
+.about-section .section-container {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.about-text ul li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    position: absolute;
+    left: 0;
+}
+
+.pratique-container {
+    padding: 5em 0;
+}
+
+.pratique-container .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.map-and-prices,
+.access-and-photo {
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+}
+
+.map-section,
+.prices-section,
+.access-details,
+.building-photo {
+    flex: 1;
+}
+
+.map-section img,
+.building-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.map-section h2,
+.prices-section h2 {
+    color: var(--active-link-color);
+}
+
+.map-section ul,
+.access-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.map-section ul li,
+.access-details ul li {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.map-section ul li i,
+.access-details ul li i {
+    color: var(--accent-color);
+    margin-right: 0.5em;
+}
+
+.accompagnements-section {
+    padding: 5em 0;
+}
+
+.accompagnements-section .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.page-title {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.content-image-layout {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.content-image-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-block,
+.image-block {
+    flex: 1;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-block ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.text-block ul li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.text-block ul li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    position: absolute;
+    left: 0;
+}
+
+/* --- Pied de page (Footer) --- */
+.site-footer {
+    background-color: var(--header-footer-bg);
+    padding: 3em 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.legal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+
+/* --- Media Queries pour le Responsif --- */
+@media screen and (max-width: 992px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-nav .hamburger {
+        display: block;
+    }
+
+    /* Le bouton "Prendre RDV" sur desktop est caché */
+    .btn-rdv {
+        display: none;
+    }
+
+    /* Le menu complet se cache par défaut */
+    .main-nav .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--header-footer-bg);
+        text-align: center;
+        padding-top: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Quand le menu est ouvert, l'afficher */
+    .main-nav .nav-links.open {
+        display: flex;
+    }
+
+    .main-nav .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    /* Afficher le bouton dans le menu mobile */
+    .main-nav .nav-links ul .btn-rdv-mobile {
+        display: block;
+    }
+
+    /* Rendre le bouton "Prendre RDV" du menu mobile identique au style desktop */
+    .main-nav .nav-links ul .btn-rdv-mobile a {
+        background-color: var(--btn-bg-color);
+        color: var(--btn-text-color);
+        border: 1px solid var(--btn-border-color);
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    /* Autres ajustements pour le responsive */
+    .psychotherapy-section .section-container,
+    .about-section .section-container,
+    .pratique-container .map-and-prices,
+    .pratique-container .access-and-photo,
+    .content-image-layout {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .legal-links {
+        text-align: center;
+    }
+
+    .main-nav .active-link {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-section {
+        padding: 5em 1em;
+    }
+}
