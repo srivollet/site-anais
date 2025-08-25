@@ -6,11 +6,6 @@
     --accent-color: #8a9c79;
     --accent-hover: #6a7c59;
     --active-link-color: #d18f97;
-
-    /* Nouvelles variables pour le bouton */
-    --btn-bg-color: #f7f4ed;
-    --btn-text-color: #4b4a45;
-    --btn-border-color: #d4d1cb;
 }
 
 /* Styles de base */
@@ -43,17 +38,17 @@ body {
     align-items: center;
 }
 
-.logo img {
-    height: 50px;
-}
-
-/* Styles du menu et du bouton de prise de RDV sur PC */
-.main-nav {
+.header-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+.logo img {
+    height: 50px;
+}
+
+/* Styles du menu et du bouton de prise de RDV sur PC */
 .main-nav .hamburger {
     display: none;
 }
@@ -70,6 +65,11 @@ body {
     margin: 0;
 }
 
+/* Cache le bouton "Prendre RDV" dans le menu mobile sur PC */
+.main-nav .nav-links ul .btn-rdv-mobile {
+    display: none;
+}
+
 .main-nav a,
 .legal-links a {
     text-decoration: none;
@@ -78,15 +78,12 @@ body {
 }
 
 /* Style du bouton "Prendre RDV" sur PC */
-.btn-rdv {
-    background-color: var(--btn-bg-color);
-    color: var(--btn-text-color);
+.header-container .btn-rdv {
+    background-color: var(--accent-color);
+    color: white;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
-    border: 1px solid var(--btn-border-color);
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .main-nav .active-link {
@@ -96,7 +93,7 @@ body {
     border-bottom: none;
 }
 
-/* --- Sections (déjà en place) --- */
+/* --- Section principale (Hero) de la page d'accueil --- */
 .hero-section {
     background-image: url('https://via.placeholder.com/1920x800?text=Image+de+fond');
     background-size: cover;
@@ -113,6 +110,7 @@ body {
     border-radius: 10px;
 }
 
+/* --- Section Psychothérapie --- */
 .psychotherapy-section {
     padding: 5em 0;
 }
@@ -149,6 +147,7 @@ body {
     color: var(--accent-color);
 }
 
+/* --- Section "Qui suis-je ?" --- */
 .about-section {
     padding: 5em 0;
 }
@@ -195,6 +194,7 @@ body {
     left: 0;
 }
 
+/* --- Section Pratique --- */
 .pratique-container {
     padding: 5em 0;
 }
@@ -249,14 +249,17 @@ body {
     margin-right: 0.5em;
 }
 
+/* --- Section Accompagnements --- */
 .accompagnements-section {
     padding: 5em 0;
+    text-align: center;
 }
 
 .accompagnements-section .section-container {
     display: flex;
     flex-direction: column;
     gap: 4em;
+    text-align: left;
 }
 
 .page-title {
@@ -308,6 +311,7 @@ body {
     left: 0;
 }
 
+
 /* --- Pied de page (Footer) --- */
 .site-footer {
     background-color: var(--header-footer-bg);
@@ -340,7 +344,11 @@ body {
         align-items: center;
     }
 
-    .main-nav {
+    .header-container .btn-rdv {
+        display: none;
+    }
+
+    .header-right {
         display: flex;
         align-items: center;
     }
@@ -349,12 +357,6 @@ body {
         display: block;
     }
 
-    /* Le bouton "Prendre RDV" sur desktop est caché */
-    .btn-rdv {
-        display: none;
-    }
-
-    /* Le menu complet se cache par défaut */
     .main-nav .nav-links {
         display: none;
         flex-direction: column;
@@ -368,7 +370,6 @@ body {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     }
 
-    /* Quand le menu est ouvert, l'afficher */
     .main-nav .nav-links.open {
         display: flex;
     }
@@ -379,22 +380,10 @@ body {
         padding-bottom: 20px;
     }
 
-    /* Afficher le bouton dans le menu mobile */
     .main-nav .nav-links ul .btn-rdv-mobile {
         display: block;
     }
 
-    /* Rendre le bouton "Prendre RDV" du menu mobile identique au style desktop */
-    .main-nav .nav-links ul .btn-rdv-mobile a {
-        background-color: var(--btn-bg-color);
-        color: var(--btn-text-color);
-        border: 1px solid var(--btn-border-color);
-        border-radius: 20px;
-        padding: 10px 20px;
-        text-transform: uppercase;
-    }
-
-    /* Autres ajustements pour le responsive */
     .psychotherapy-section .section-container,
     .about-section .section-container,
     .pratique-container .map-and-prices,
