@@ -8,7 +8,7 @@
     --active-link-color: #d18f97;
 
     /* Nouvelles variables pour le bouton */
-    --btn-bg-color: #f7f4ed;
+    --btn-bg-color: #f3f7ed;
     --btn-text-color: #4b4a45;
     --btn-border-color: #d4d1cb;
 }
@@ -29,6 +29,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 /* --- En-tête (Header) --- */
@@ -68,6 +74,11 @@ body {
     gap: 20px;
     padding: 0;
     margin: 0;
+}
+
+/* Cache le bouton "Prendre RDV" dans le menu mobile sur PC */
+.main-nav .nav-links ul .btn-rdv-mobile {
+    display: none;
 }
 
 .main-nav a,
