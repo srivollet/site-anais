@@ -75,18 +75,6 @@ body {
     font-weight: bold;
 }
 
-/* Style du bouton "Prendre RDV" sur PC */
-.btn-rdv {
-    background-color: var(--btn-bg-color);
-    color: var(--btn-text-color);
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    border: 1px solid var(--btn-border-color);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .main-nav .active-link {
     color: var(--active-link-color);
     font-weight: bold;
