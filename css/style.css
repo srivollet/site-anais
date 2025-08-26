@@ -48,12 +48,6 @@ body {
 }
 
 /* Styles du menu et du bouton de prise de RDV sur PC */
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 .main-nav .hamburger {
     display: none;
 }
@@ -347,12 +341,6 @@ body {
         align-items: center;
     }
 
-    .main-nav {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
     .main-nav .hamburger {
         display: block;
     }
@@ -384,17 +372,8 @@ body {
     .btn-rdv {
         display: none;
     }
-
-    /* Le bouton "Prendre RDV" du menu mobile est affiché et stylisé */
-    .main-nav .nav-links ul li a[href*="doctolib"] {
-        background-color: var(--btn-bg-color);
-        color: var(--btn-text-color);
-        padding: 10px 20px;
-        border-radius: 20px;
-        text-decoration: none;
-        border: 1px solid var(--btn-border-color);
-        font-weight: bold;
-        text-transform: uppercase;
+    .main-nav .nav-links ul .btn-rdv-mobile {
+        display: block;
     }
 
     .psychotherapy-section .section-container,
