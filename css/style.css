@@ -6,11 +6,6 @@
     --accent-color: #8a9c79;
     --accent-hover: #6a7c59;
     --active-link-color: #d18f97;
-
-    /* Nouvelles variables pour le bouton */
-    --btn-bg-color: #f7f4ed;
-    --btn-text-color: #4b4a45;
-    --btn-border-color: #d4d1cb;
 }
 
 /* Styles de base */
@@ -43,6 +38,13 @@ body {
 
 .logo img {
     height: 50px;
+}
+
+/* Styles du menu et du bouton de prise de RDV sur PC */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 /* Styles du menu et du bouton de prise de RDV sur PC */
