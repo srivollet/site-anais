@@ -2,13 +2,14 @@
 :root {
     --main-bg-color: #f8f8f5;
     --text-color: #4b4b4b;
-    --header-footer-bg: #e6e6e2;
+    --header-bg: #f8f8f5;
+    --footer-bg: #e6e6e2;
     --accent-color: #8a9c79;
     --accent-hover: #6a7c59;
     --active-link-color: #d18f97;
 
     /* Nouvelles variables pour le bouton */
-    --btn-bg-color: #f3f7ed;
+    --btn-bg-color: #e6e6e2;
     --btn-text-color: #4b4a45;
     --btn-border-color: #d4d1cb;
 }
@@ -39,8 +40,9 @@ body {
 
 /* --- En-tête (Header) --- */
 .site-header {
-    background-color: var(--header-footer-bg);
+    background-color: var(--header-bg);
     padding: 1em 0;
+    text-transform: uppercase;
 }
 
 .header-container {
@@ -50,7 +52,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
 }
 
 /* Styles du menu et du bouton de prise de RDV sur PC */
@@ -321,7 +323,7 @@ body {
 
 /* --- Pied de page (Footer) --- */
 .site-footer {
-    background-color: var(--header-footer-bg);
+    background-color: var(--footer-bg);
     padding: 3em 0;
     text-align: center;
 }
@@ -373,7 +375,7 @@ body {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: var(--header-footer-bg);
+        background-color: var(--header-bg);
         text-align: center;
         padding-top: 20px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
