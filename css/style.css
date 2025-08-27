@@ -64,6 +64,7 @@ body {
 
 .main-nav .hamburger {
     display: none;
+    font-size: 1.5em;
 }
 
 .main-nav .nav-links {
