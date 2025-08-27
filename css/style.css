@@ -388,9 +388,9 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 0;
-        background-color: var(--header-bg);
+        background-color: var(--main-bg-color);
         text-align: center;
         padding-top: 20px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -410,6 +410,7 @@ body {
     /* Afficher le bouton dans le menu mobile */
     .main-nav .nav-links ul .btn-rdv-mobile {
         display: block;
+        margin: 20px;
     }
 
     /* Rendre le bouton "Prendre RDV" du menu mobile identique au style desktop */
