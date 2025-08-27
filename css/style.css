@@ -16,7 +16,7 @@
 
 /* Styles de base */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -127,7 +127,7 @@ body {
 }
 
 .psychotherapy-section {
-    padding: 5em 0;
+    padding: 0em 0;
 }
 
 .psychotherapy-section .section-container {
@@ -148,7 +148,6 @@ body {
 .psychotherapy-section .image-content img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .icon-text {
