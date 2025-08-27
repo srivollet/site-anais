@@ -350,6 +350,10 @@ body {
 
 /* --- Media Queries pour le Responsif --- */
 @media screen and (max-width: 992px) {
+    .text-block {
+        text-align: left;
+    }
+
     .header-container {
         flex-direction: row;
         justify-content: space-between;
