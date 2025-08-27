@@ -2,7 +2,7 @@
 :root {
     --main-bg-color: #fdfaf1;
     --text-color: #53612a;
-    --header-bg: #fdfaf1;
+    --header-bg: #e2e9d9;
     --footer-bg: #e2e9d9;
     --accent-color: #8a9c79;
     --accent-hover: #6a7c59;
@@ -41,7 +41,7 @@ body {
 /* --- En-tête (Header) --- */
 .site-header {
     background-color: var(--header-bg);
-    padding: 1em 0;
+    padding: 0em 0;
     text-transform: uppercase;
 }
 
@@ -164,12 +164,12 @@ body {
 }
 
 .about-section {
-    padding: 5em 0;
+    padding: 1em 1em;
 }
 
 .about-section .section-container {
     display: flex;
-    gap: 3em;
+    gap: 4em;
     align-items: center;
     flex-direction: row;
 }
@@ -179,9 +179,9 @@ body {
 }
 
 .about-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .about-text {
@@ -211,13 +211,13 @@ body {
 }
 
 .pratique-container {
-    padding: 5em 0;
+    padding: 1em 0;
 }
 
 .pratique-container .section-container {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
 }
 
 .map-and-prices,
@@ -275,10 +275,11 @@ body {
 }
 
 .page-title {
-    font-size: 2.5em;
+    font-size: 2em;
     color: var(--text-color);
-    margin-bottom: 1em;
+    margin-bottom: auto;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .content-image-layout {
@@ -327,7 +328,7 @@ body {
 /* --- Pied de page (Footer) --- */
 .site-footer {
     background-color: var(--footer-bg);
-    padding: 3em 0;
+
     text-align: center;
 }
 
@@ -363,6 +364,8 @@ body {
 
     .main-nav .hamburger {
         display: block;
+        color: var(--text-color);
+        background: var(--header-bg);
     }
 
     /* Le bouton "Prendre RDV" sur desktop est caché */
@@ -421,7 +424,7 @@ body {
     .pratique-container .access-and-photo,
     .content-image-layout {
         flex-direction: column;
-        padding: 2em;
+        gap: 1em;
     }
 
     .footer-container {
@@ -438,6 +441,23 @@ body {
 
     .main-nav .active-link {
         border-bottom: none;
+    }
+
+    .accompagnements-section .section-container {
+        gap: 2em;
+    }
+
+    .page-title {
+        font-size: 2em;
+        margin: auto;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .logo img {
+        height: 80px;
     }
 }
 
