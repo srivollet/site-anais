@@ -151,6 +151,12 @@ body {
     height: auto;
 }
 
+.fa-solid.fa-leaf {
+    display: block;
+    margin: 15px auto;
+    font-size: 1.5em;
+}
+
 .icon-text {
     display: flex;
     align-items: center;
