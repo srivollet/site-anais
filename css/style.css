@@ -498,6 +498,7 @@ body {
     .page-title {
         font-size: 1.7em;
         margin: auto;
+        font-weight: lighter;
     }
 
     .about-image img {
