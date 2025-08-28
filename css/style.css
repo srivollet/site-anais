@@ -88,7 +88,7 @@ body {
 .legal-links a {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* Style du bouton "Prendre RDV" sur PC */
@@ -99,7 +99,7 @@ body {
     border-radius: 20px;
     text-decoration: none;
     border: 1px solid var(--btn-border-color);
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -410,7 +410,6 @@ body {
     /* Afficher le bouton dans le menu mobile */
     .main-nav .nav-links ul .btn-rdv-mobile {
         display: block;
-        margin: 20px;
     }
 
     /* Rendre le bouton "Prendre RDV" du menu mobile identique au style desktop */
