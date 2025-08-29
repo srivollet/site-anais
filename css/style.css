@@ -29,6 +29,10 @@ body {
     display: none;
 }
 
+.contact {
+    color: var(--text-color);
+}
+
 .section-container,
 .header-container,
 .footer-container {
