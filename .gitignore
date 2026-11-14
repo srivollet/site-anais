@@ -1,0 +1,7 @@
+# Liste blanche : seuls le site et ce README sont suivis.
+# Tout le reste de anais/ (CLAUDE.md, archives, zip, notes) reste local.
+/*
+!/.gitignore
+!/README.md
+!/public_html/
+.DS_Store
